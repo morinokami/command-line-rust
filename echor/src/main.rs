@@ -14,7 +14,7 @@ struct Args {
 
 fn main() {
     let args = Args::parse();
-    println!(
+    print!(
         "{}{}",
         args.text.join(" "),
         if args.omit_newline { "" } else { "\n" }
